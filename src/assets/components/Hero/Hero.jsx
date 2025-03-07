@@ -87,7 +87,7 @@ const Hero = () => {
         </div>
       </div>
         <div className="flex flex-col gap-6">
-          <div className="flex  bg-black w-[424px] text-white">
+          <div className="flex relative rounded-md bg-black w-[424px] text-white">
             <div className="pl-[40px] py-[47px]">
               <p className="text-yellow-300 pb-[5px] ">SUMMER SALES</p>
               <h1 className="text-2xl font-bold pb-[18px]">New Google Pixel 6 Pro</h1>
@@ -98,9 +98,12 @@ const Hero = () => {
                 </span>
               </button>
             </div>
-            <img className="pt-[23px]" src={Img4} alt="" />
+            <img className="pt-[47px]" src={Img4} alt="" />
+            <div className="absolute text-black font-bold right-6 top-6 bg-yellow-400  py-2 px-4">
+              <p>29% OFF</p>
+            </div>
           </div>
-          <div className="flex bg-gray-100  py-11 justify-center items-center gap-5 w-[424px] text-black">
+          <div className="flex bg-gray-100 rounded-md py-11 justify-center items-center gap-5 w-[424px] text-black">
             <img src={Img5} alt="" />
             <div>
               <h3 className="font-bold pb-3 w-[100px]">Xiaomi FlipBuds Pro</h3>
