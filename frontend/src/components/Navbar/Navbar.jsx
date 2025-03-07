@@ -8,14 +8,14 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { FiInstagram, FiPhoneCall } from "react-icons/fi";
-import Logo from "../../Icon.png";
+import Logo from "../../assets/Icon.png";
 import { PiHeadphones, PiShoppingCartSimple } from "react-icons/pi";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { GoPerson } from "react-icons/go";
 import { IoEyeOutline, IoSearch } from "react-icons/io5";
-import Img1 from "../../America.png";
-import Img2 from "../../Mandarin.jpg";
-import Img3 from "../../Rusia.png";
+import Img1 from "../../assets/America.png";
+import Img2 from "../../assets/Mandarin.jpg";
+import Img3 from "../../assets/Rusia.png";
 import { CiLocationOn } from "react-icons/ci";
 import { MdCompareArrows } from "react-icons/md";
 import { CgDanger } from "react-icons/cg";

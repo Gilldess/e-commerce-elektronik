@@ -1,8 +1,8 @@
 import { IoCloseOutline } from "react-icons/io5";
-import Img1 from "../img/Image.png";
-import Img2 from "../img/cctv.png";
-import Img3 from "../img/Phone.png";
-import Img4 from "../img/Phone1.png";
+import Img1 from "../../assets/img/Image.png";
+import Img2 from "../../assets/img/cctv.png";
+import Img3 from "../../assets/img/Phone.png";
+import Img4 from "../../assets/img/Phone1.png";
 import { FaArrowRight } from "react-icons/fa";
 
 const kategoriClick = [

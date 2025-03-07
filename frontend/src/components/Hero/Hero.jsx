@@ -1,10 +1,10 @@
 import Slider from "react-slick";
-import Img1 from "../img/ps.png";
-import Img2 from "../img/ps.png";
-import Img3 from "../img/ps.png";
+import Img1 from "../../assets/img/ps.png";
+import Img2 from "../../assets/img/ps.png";
+import Img3 from "../../assets/img/ps.png";
 import { FaArrowRight } from "react-icons/fa";
-import Img4 from "../img/phone2.png";
-import Img5 from "../img/tws.png"
+import Img4 from "../../assets/img/phone2.png";
+import Img5 from "../../assets/img/tws.png"
 
 const dataSlider = [
   {
