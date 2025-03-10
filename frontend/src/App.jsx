@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Testimolasi from "./components/testimolasi/Testimolasi";
 import Popup from "./components/popupMenu/Popup";
+import TopProduct from "./components/TopProduct";
+import Categori from "./components/Categori";
 
 const App = () => {
   const [menuProduct, setMenuProduct] = React.useState(false);
@@ -18,6 +20,8 @@ const App = () => {
       <Popup menuProduct={menuProduct} setMenuProduct={setMenuProduct} />
       <Hero />
       <Testimolasi />
+      <TopProduct />
+      <Categori />
     </div>
   );
 };
