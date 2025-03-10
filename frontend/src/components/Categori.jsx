@@ -69,7 +69,7 @@ export default function Categori () {
                 <Slider {...settings}>
                     {
                         categories.map((data)=> (
-                            <div className="my-6">
+                            <div className="my-6" key={data.name}>
                                 <div className="flex flex-col relative gap-4 shadow-lg py-8 px-6 mx-4 rounded-md border border-gray-200 cursor-pointer">         
                                     <div>
                                         <img src={data.image} alt="" />

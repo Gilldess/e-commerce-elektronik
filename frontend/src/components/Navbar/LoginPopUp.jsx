@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import axios from 'axios';
 import { IoEyeOutline } from 'react-icons/io5';
 import { FaArrowRight } from 'react-icons/fa';
+import { ShopContext } from '../../context/ShopContext';
 
-const LoginPopUp = () => {
-	const url = 'http://localhost:4000';
-	const [token, setToken] = useState('');
+const LoginPopUp = ({setShowLogin}) => {
+	const { url, setToken } = useContext(ShopContext);
 	const [state, setState] = useState('Login');
 	const [data, setData] = useState({
 		name: '',
@@ -31,6 +31,7 @@ const LoginPopUp = () => {
 		if (response.data.success) {
 			setToken(response.data.token);
 			localStorage.setItem('token', response.data.token);
+            setShowLogin(false)
 		} else {
 			alert(response.data.message);
 		}

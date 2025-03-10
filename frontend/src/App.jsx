@@ -8,17 +8,23 @@ import Testimolasi from './components/testimolasi/Testimolasi';
 import Popup from './components/popupMenu/Popup';
 import TopProduct from './components/TopProduct';
 import Categori from './components/Categori';
+import LoginPopUp from './components/Navbar/LoginPopUp';
 
 const App = () => {
 	const [menuProduct, setMenuProduct] = React.useState(false);
+	const [showLogin, setShowLogin] = useState(false);
 
 	const handleMenuProduct = () => {
 		setMenuProduct(!menuProduct);
 	};
 	return (
 		<BrowserRouter>
-			<div>
-				<Navbar handleMenuProduct={handleMenuProduct} />
+			{showLogin ? <LoginPopUp setShowLogin={setShowLogin} /> : <></>}
+				<Navbar
+					handleMenuProduct={handleMenuProduct}
+					showLogin={showLogin}
+					setShowLogin={setShowLogin}
+				/>
 				<Popup
 					menuProduct={menuProduct}
 					setMenuProduct={setMenuProduct}
@@ -27,7 +33,6 @@ const App = () => {
 				<Testimolasi />
 				<TopProduct />
 				<Categori />
-			</div>
 		</BrowserRouter>
 	);
 };
