@@ -140,7 +140,7 @@ const Navbar = ({ handleMenuProduct }) => {
             type="text"
             placeholder="Search"
             className="w-[650px] sm:-w[500px] transition-all group-hover:w-[700px]
-                duration-300 rounded-sm border border-gray-300 px-3 py-1"
+                duration-300 rounded-sm border border-gray-300 px-3 py-1 text-black"
           />
           <IoSearch className="text-gray-500 group-hover:text-black absolute top-1/2 -translate-y-1/2 right-3" />
         </div>

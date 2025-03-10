@@ -148,7 +148,7 @@ const Popup = ({ menuProduct, setMenuProduct }) => {
               </div>
             </div>
             {/* kategori shop  */}
-            <div className="mt-4 group relative">
+            <div className="mt-4 group relative cursor-pointer">
               {kategoriClick.map((data) => (
                 <div className="py-2 hover:bg-gray-300 pl-4" key={data.id}>
                   <a href={data.link}>{data.nama}</a>

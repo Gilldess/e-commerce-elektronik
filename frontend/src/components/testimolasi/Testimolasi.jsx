@@ -5,7 +5,7 @@ import { PiCreditCardLight } from "react-icons/pi";
 
 export default function Testimolasi () {
     return (
-        <div className="flex justify-between mx-[210px] p-4 items-center border border-gray-400 rounded-md">
+        <div className="flex justify-between mx-[200px] p-4 items-center border border-gray-400 rounded-md">
             <div className="flex gap-4 p-4 items-center">
                     <LiaBoxSolid className="text-4xl"/>
                 <div className="flex flex-col gap-1 justify-center">

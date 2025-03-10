@@ -67,23 +67,23 @@ import product_60 from "./product_60.png";
 
 export const categories = [
   {
-    name: "Men",
+    name: "Computer & Laptop",
     image: men,
   },
   {
-    name: "Women",
+    name: "Computer Accessories",
     image: women,
   },
   {
-    name: "Kids",
+    name: "Headphone",
     image: kids,
   },
   {
-    name: "Electronics",
+    name: "Mobile Accessories",
     image: electronics,
   },
   {
-    name: "Cosmetics",
+    name: "Gaming Console",
     image: cosmetics,
   },
 ];
@@ -162,6 +162,8 @@ export const products = [
       "Stay warm and stylish with our Winter Coat, crafted for the modern woman who values both fashion and function.",
     category: "Men",
   },
+]
+   export const ProductsSlider = [
   {
     _id: "9",
     name: "Chic Wide Leg Jumpsuit with Sleeveless Design",
