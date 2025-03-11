@@ -8,19 +8,12 @@ import Testimolasi from './components/testimolasi/Testimolasi';
 import Popup from './components/popupMenu/Popup';
 import TopProduct from './components/TopProduct';
 import Categori from './components/Categori';
-<<<<<<< HEAD
 import ProductBaner from './components/ProductBaner';
-
-const App = () => {
-	const [menuProduct, setMenuProduct] = React.useState(false);
-	const [category, setCategory] = useState("All")
-=======
 import LoginPopUp from './components/Navbar/LoginPopUp';
 
 const App = () => {
 	const [menuProduct, setMenuProduct] = React.useState(false);
 	const [showLogin, setShowLogin] = useState(false);
->>>>>>> refs/remotes/origin/main
 
 	const handleMenuProduct = () => {
 		setMenuProduct(!menuProduct);
@@ -41,11 +34,7 @@ const App = () => {
 				<Testimolasi />
 				<TopProduct />
 				<Categori />
-<<<<<<< HEAD
 				<ProductBaner category={category} />
-			</div>
-=======
->>>>>>> refs/remotes/origin/main
 		</BrowserRouter>
 	);
 };
