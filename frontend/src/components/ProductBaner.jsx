@@ -1,5 +1,5 @@
 import { FaStar } from "react-icons/fa";
-import { products, ProductsSlider } from "../lib/data";
+import { ProductsSlider } from "../lib/data";
 
 export default function ProductBaner ({category}) {
     return (
@@ -24,7 +24,7 @@ export default function ProductBaner ({category}) {
                     ProductsSlider.map((data)=> {
                         if (category === "All" || category === data.category) {
                             return (                    
-                                <div className="w-[234px] h-[320px]">
+                                <div key={data._id} className="w-[234px] h-[320px]">
                                     <div className="w-[202px] h-[172px]">
                                         <img 
                                         className="w-full"

@@ -171,7 +171,7 @@ export const products = [
     price: 280.00,
     description:
       "Make a statement with our Jumpsuit, perfect for the confident woman who loves contemporary fashion.",
-    category: "Men",
+    category: "Computer & Laptop",
   },
   {
     _id: "10",
@@ -180,7 +180,7 @@ export const products = [
     price: 180.00,
     description:
       "Complete your look with our Women's Scarf, designed to add a touch of elegance to any outfit.",
-    category: "Men",
+    category: "Computer & Laptop",
   },
   {
     _id: "11",
@@ -189,7 +189,7 @@ export const products = [
     price: 80.00,
     description:
       "Step out in style with our Women's Pumps, crafted for both comfort and sophistication.",
-    category: "Men",
+    category: "Computer & Laptop",
   },
   {
     _id: "12",
@@ -198,7 +198,7 @@ export const products = [
     price: 240.00,
     description:
       "Make a statement of bold elegance with our Women's Suit, perfect for those who appreciate fashion that speaks volumes.",
-    category: "Men",
+    category: "Computer & Laptop",
   },
 
   // Women's Products
@@ -209,7 +209,7 @@ export const products = [
     price: 180.00,
     description:
       "Discover the perfect blend of comfort and style with our Men's Jacket, designed for the contemporary man.",
-    category: "Women",
+    category: "Computer Accessories",
   },
   {
     _id: "14",
@@ -218,7 +218,7 @@ export const products = [
     price: 160.00,
     description:
       "Embrace casual charm with our Denim Shirt, tailored for the modern man who values comfort and style.",
-    category: "Women",
+    category: "Computer Accessories",
   },
   {
     _id: "15",

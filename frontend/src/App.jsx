@@ -14,6 +14,7 @@ import LoginPopUp from './components/Navbar/LoginPopUp';
 const App = () => {
 	const [menuProduct, setMenuProduct] = React.useState(false);
 	const [showLogin, setShowLogin] = useState(false);
+	const [category, setCategory] = useState("All")
 
 	const handleMenuProduct = () => {
 		setMenuProduct(!menuProduct);
@@ -33,7 +34,7 @@ const App = () => {
 				<Hero />
 				<Testimolasi />
 				<TopProduct />
-				<Categori />
+				<Categori setCategory={setCategory} />
 				<ProductBaner category={category} />
 		</BrowserRouter>
 	);
