@@ -6,25 +6,25 @@ import {
 	FaTwitter,
 	FaYoutube,
 } from 'react-icons/fa';
-import { GoPerson } from "react-icons/go";
+import { GoPerson } from 'react-icons/go';
 import { FiInstagram, FiPackage, FiPhoneCall } from 'react-icons/fi';
 import Logo from '../../assets/Icon.png';
 import { PiHeadphones, PiShoppingCartSimple } from 'react-icons/pi';
 import { IoIosHeartEmpty } from 'react-icons/io';
-import {  IoSearch } from 'react-icons/io5';
+import { IoSearch } from 'react-icons/io5';
 import Img1 from '../../assets/America.png';
 import Img2 from '../../assets/Mandarin.jpg';
 import Img3 from '../../assets/Rusia.png';
 import { CiLocationOn } from 'react-icons/ci';
 import { MdCompareArrows } from 'react-icons/md';
 import { CgDanger } from 'react-icons/cg';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import PopupCategory from '../popupMenu/PopupCategory';
 import { FaCircleUser } from 'react-icons/fa6';
 import { TbLogout } from 'react-icons/tb';
 import { useNavigate } from 'react-router-dom';
 import LoginPopUp from './LoginPopUp';
-
+import { ShopContext } from '../../context/ShopContext';
 
 const DropdownLink = [
 	{
@@ -57,17 +57,17 @@ const DropdownMony = [
 	},
 ];
 
-const Navbar = ({ handleMenuProduct }) => {
-	const [open, setOpen] = useState(false);
-  const [showLogin, setShowLogin] = useState(false);
-  const [token, setToken] = useState('');
-	const navigate = useNavigate()
+const Navbar = ({ handleMenuProduct, showLogin, setShowLogin }) => {
+	const { token, setToken } = useContext(ShopContext);
+  const [open, setOpen] = useState(false);
+	
+	const navigate = useNavigate();
 
-  const logout = () => {
-		localStorage.removeItem("token")
-		setToken("")
-		navigate("/")
-	}
+	const logout = () => {
+		localStorage.removeItem('token');
+		setToken('');
+		navigate('/');
+	};
 
   const handleLogin = () => {
     setShowLogin(!showLogin)
@@ -177,29 +177,34 @@ const Navbar = ({ handleMenuProduct }) => {
 					<PiShoppingCartSimple />
 					<IoIosHeartEmpty />
 					{!token ? (
-					<button
-						onClick={handleLogin}
-						className='btn-outline rounded-full'
-					>
-						<GoPerson/>
-					</button>
-				) : (
-					<div className='group relative'>
-						<FaCircleUser className='text-2xl' />
-						<ul className='bg-primary shadow-sm p-3 w-24 ring-1 ring-slate-900/15 rounded absolute right-0 group-hover:flex flex-col hidden'>
-							<li onClick={()=> navigate("/myorders")} className='flexCenter gap-x-2 cursor-pointer'>
-								<FiPackage className='text-[19px]' />
-								<p>Orders</p>
-							</li>
-							<hr className='my-2' />
-							<li onClick={logout} className='flexCenter gap-x-2 cursor-pointer'>
-								<TbLogout className='text-[19px]' />
-								<p>Logout</p>
-							</li>
-						</ul>
-					</div>
-				)}
-        {showLogin ? <LoginPopUp setShowLogin={setShowLogin} /> : <></>}
+						<button
+							onClick={handleLogin}
+							className='btn-outline rounded-full'
+						>
+							<GoPerson />
+						</button>
+					) : (
+						<div className='group relative'>
+							<FaCircleUser className='text-2xl' />
+							<ul className='bg-blue-600 shadow-sm p-3 w-fit ring-1 ring-slate-900/15 rounded absolute right-0 group-hover:flex flex-col hidden'>
+								<li
+									onClick={() => navigate('/myorders')}
+									className='flex items-center gap-x-2 cursor-pointer'
+								>
+									<FiPackage className='text-[19px]' />
+									<p>Orders</p>
+								</li>
+								<hr className='my-2' />
+								<li
+									onClick={logout}
+									className='flex items-center gap-x-2 cursor-pointer'
+								>
+									<TbLogout className='text-[19px]' />
+									<p>Logout</p>
+								</li>
+							</ul>
+						</div>
+					)}
 				</div>
 			</div>
 			{/* lower navbar  */}
