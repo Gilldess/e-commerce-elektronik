@@ -8,9 +8,11 @@ import Testimolasi from './components/testimolasi/Testimolasi';
 import Popup from './components/popupMenu/Popup';
 import TopProduct from './components/TopProduct';
 import Categori from './components/Categori';
+import ProductBaner from './components/ProductBaner';
 
 const App = () => {
 	const [menuProduct, setMenuProduct] = React.useState(false);
+	const [category, setCategory] = useState("All")
 
 	const handleMenuProduct = () => {
 		setMenuProduct(!menuProduct);
@@ -27,6 +29,7 @@ const App = () => {
 				<Testimolasi />
 				<TopProduct />
 				<Categori />
+				<ProductBaner category={category} />
 			</div>
 		</BrowserRouter>
 	);
