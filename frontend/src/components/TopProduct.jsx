@@ -90,9 +90,9 @@ export default function TopProduct() {
                   <img className="object-cover w-full h-full" src={data.image} alt="" />
                   <div className="hidden group-hover:block cursor-pointer">
                     <div className="flex gap-3 bg-black/30 h-[188px] w-[216px] items-center justify-center absolute top-3 rounded-sm">
-                      <IoIosHeartEmpty className="p-3 bg-white rounded-full hover:bg-orange-400 text-5xl" />
-                      <FiShoppingCart className="py-3 pr-[3px] bg-white rounded-full hover:bg-orange-400 text-5xl"/>
-                      <IoEyeOutline className="p-3 bg-white rounded-full hover:bg-orange-400 text-5xl"/>
+                      <IoIosHeartEmpty className="p-3 bg-white rounded-full hover:bg-orange-400 hover:text-white text-5xl" />
+                      <FiShoppingCart className="py-3 pr-[3px] bg-white rounded-full hover:bg-orange-400 hover:text-white text-5xl"/>
+                      <IoEyeOutline className="p-3 bg-white rounded-full hover:bg-orange-400 hover:text-white text-5xl"/>
                     </div>
                   </div>
                 </div>

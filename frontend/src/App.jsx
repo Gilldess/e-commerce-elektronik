@@ -12,6 +12,7 @@ import ProductBaner from './components/ProductBaner';
 import LoginPopUp from './components/Navbar/LoginPopUp';
 import Banner from './components/Banner';
 import LatestNews from './components/LatestNews';
+import Subscribe from './components/Subscribe';
 
 const App = () => {
 	const [menuProduct, setMenuProduct] = React.useState(false);
@@ -40,6 +41,7 @@ const App = () => {
 				<ProductBaner category={category} />
 				<Banner />
 				<LatestNews />
+				<Subscribe />
 		</BrowserRouter>
 	);
 };
