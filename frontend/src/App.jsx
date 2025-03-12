@@ -10,6 +10,8 @@ import TopProduct from './components/TopProduct';
 import Categori from './components/Categori';
 import ProductBaner from './components/ProductBaner';
 import LoginPopUp from './components/Navbar/LoginPopUp';
+import Banner from './components/Banner';
+import LatestNews from './components/LatestNews';
 
 const App = () => {
 	const [menuProduct, setMenuProduct] = React.useState(false);
@@ -36,6 +38,8 @@ const App = () => {
 				<TopProduct />
 				<Categori setCategory={setCategory} />
 				<ProductBaner category={category} />
+				<Banner />
+				<LatestNews />
 		</BrowserRouter>
 	);
 };
