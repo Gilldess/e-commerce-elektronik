@@ -49,7 +49,7 @@ export default function LatestNews () {
     },
 ]
     return (
-        <div className="bg-gray-100 px-[300px] py-[72px] flex flex-col items-center">
+        <div className="bg-gray-100 px-[200px] py-[72px] flex flex-col items-center">
             <h1 className="text-3xl font-semibold pb-10">Latest News</h1>
             <div className="flex gap-6">
                 {

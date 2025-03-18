@@ -1,10 +1,4 @@
-import { BsAmazon } from "react-icons/bs";
 import { FaArrowRight } from "react-icons/fa";
-import { IoLogoGoogle } from "react-icons/io";
-import { LuPhilippinePeso } from "react-icons/lu";
-import { SiSamsung, SiToshiba } from "react-icons/si";
-
-
 
 export default function Subscribe () {
     return (

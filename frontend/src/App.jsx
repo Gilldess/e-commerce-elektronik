@@ -13,6 +13,8 @@ import LoginPopUp from './components/Navbar/LoginPopUp';
 import Banner from './components/Banner';
 import LatestNews from './components/LatestNews';
 import Subscribe from './components/Subscribe';
+import Footer from './components/footer';
+import Copyrght from './components/copyrght';
 
 const App = () => {
 	const [menuProduct, setMenuProduct] = React.useState(false);
@@ -42,6 +44,8 @@ const App = () => {
 				<Banner />
 				<LatestNews />
 				<Subscribe />
+				<Footer />
+				<Copyrght />
 		</BrowserRouter>
 	);
 };

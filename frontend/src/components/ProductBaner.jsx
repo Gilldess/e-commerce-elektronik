@@ -6,7 +6,7 @@ import { IoEyeOutline } from "react-icons/io5";
 
 export default function ProductBaner ({category}) {
     return (
-        <div className="flex gap-6 py-[72px] px-[200px] w-full">
+        <div className="flex gap-6 py-[72px] px-[200px]">
             <div className="flex flex-col gap-6">
                 {/* feature product  */}
                 <div className="flex justify-between">

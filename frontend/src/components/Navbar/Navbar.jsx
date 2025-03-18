@@ -86,12 +86,12 @@ const Navbar = ({ handleMenuProduct, showLogin, setShowLogin }) => {
 				<div className='flex justify-center items-center gap-6'>
 					<div className='flex items-center gap-[12px]'>
 						<p>Follow us:</p>
-						<FaTwitter />
-						<FaFacebook />
-						<FaPinterestP />
-						<BsReddit />
-						<FaYoutube />
-						<FiInstagram />
+						<FaTwitter className='cursor-pointer'/>
+						<FaFacebook className='cursor-pointer'/>
+						<FaPinterestP className='cursor-pointer'/>
+						<BsReddit className='cursor-pointer'/>
+						<FaYoutube className='cursor-pointer'/>
+						<FiInstagram className='cursor-pointer'/>
 					</div>
 					<div className='w-[0.5px] h-[25px] bg-white'></div>
 					<div className='group relative cursor-pointer'>
